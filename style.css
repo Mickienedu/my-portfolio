@@ -1,32 +1,23 @@
 header { /*all nav links and logo are fixed here on all pages*/
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    
+    justify-content: space-evenly;
     background-color: dimgray;
     top: 0;
     right: 0;
     left: 0;
     position: fixed;
+    width: auto;
 
 }
-.name-logo{
-    display: flex;
-    align-items: center;
-    color: white;
-}
+
 .name-logo h2{
-    display: flex;
-    text-align: end;
-    box-shadow: 5px 10px 10px 6px goldenrod;
-    font-size: 25px;
+    color: white;
+    box-shadow: 1px 1px 1px 1px goldenrod;
+    font-size: 20px;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
-/* .name-logo img{
-    width: 40px;
-    border-radius: 10px;
-} */
+
 .header{
     display: flex;
     gap: 3rem;
@@ -35,25 +26,24 @@ header { /*all nav links and logo are fixed here on all pages*/
 .header a{
     text-decoration: none;
     color: white;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
-.nav:hover{
-    background-color: blueviolet;
+.nav-header:hover{
+    background-color: darkred;
 }
-.flex { /*the pic on the center of homepage*/
+/*the pic on the center of homepage*/
+.flex { 
     width: 300px;
     border-radius: 25px;
-    border: 1px solid;
-    padding: 2px;
     /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
-    box-shadow: 5px 10px 10px 10px goldenrod;
+    box-shadow: 1px 1px 1px 1px goldenrod;
 }
-.art0 { /*first section on homepage*/
+/*first section on homepage*/
+.art0 { 
     margin-top: 3.7rem;
     display: grid;
-    /* text-align: center; */
     font-size: large;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
@@ -61,69 +51,77 @@ header { /*all nav links and logo are fixed here on all pages*/
 .art0 h2{
     text-align: center;
     line-height: 1px;
-    font-size: large;
-    font-weight: lighter;
+    font-size: 25px;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
 }
-.h1{
+/* .h1{
     font-size: large;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
-    /* box-shadow: 5px 10px 10px 5px goldenrod;  */
     line-height: 2px;
     color: rgb(146, 125, 73);
-    /* animation of this element starts here */
-    position: relative;
+    position: relative; */
     /* the animation comprises; ani-name h1, ani-duration 20s, ani-timing-function linear, ani-delay 2s, ani-iteration-count infinite, ani-direction alternate */
-    animation: h1 20s linear 2s infinite alternate;
-}
-@keyframes h1 {
+    /* animation: h1 20s linear 2s infinite alternate;
+} */
+/* @keyframes h1 {
     0% {left: 0px; top: 0px;}
     25% {left:1400px; top: 0px;}
     50% {left: 1400px; top: 1000px;}
     75% {left: 0px; top: 1000px;}
     100% {left: 0px; top: 0px;}
-} 
+}  */
 /* animation ends here */
+
+/* this is the first section of the page */
 .article{
     display: flex;
     align-items: center;
-    margin-left: 100px;
-    margin-right: 100px;
-    gap: 2rem;
+    justify-content: center;
+    gap: 8rem;
     line-height: 50px;
 }
-/*about page starts here*/
-#about{
-    margin-top: 4rem;
-    background-color: darkcyan;
-    color: whitesmoke;
+.article article{
+    width: 70rem;
     font-size: large;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
+/* the first section ended here */
+
+/* the second section about page starts here*/
+#about{
+    margin-top: 4rem;
+    background-color: darkcyan;
+}
 #about h1{ 
+    /* display: flex; */
     text-align: center;
 }
 /* the video is included */
 .about-me{
     display: flex;
-    justify-content: center;
-    margin-left: 180px;
-    margin-right: 180px;
+    justify-content: space-evenly;
+    align-items: center;
 }
 /* just the article and ul/li */
-nav{
+.nav{
     display: grid;
-    align-items: center;
-    line-height: 30px;
-    font-size: large;
+}
+.nav article{
+    width: 70rem;
+    color: white;
+    font-size: 20px;
+    line-height: 35px;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
 /* only the ul */
-.inliner{
-    margin-top: -14rem;
+.inliner h2, .inliner li{
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
 }
 /*the video on the about page*/
 .video-code { 
@@ -155,14 +153,17 @@ nav{
     margin-top: 1rem;
     
 }
+/* the email and name input */
 .fname{
     border-radius: 20px;
     width: 20rem;
     outline: none;
-    border: 1px solid;
-    padding: 3px;
+    border: 1px solid wheat;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
     /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
-    box-shadow: 5px 10px 10px 5px goldenrod;
+    box-shadow: 1px 1px 1px 1px goldenrod;
 }
 /* textarea and submit class name */
 .textarea-submit{
@@ -177,10 +178,12 @@ nav{
     width: 25rem;
     border-radius: 15px;
     outline: none;
-    border: 1px solid;
-    padding: 2px;
+    border: 1px solid wheat;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
     /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
-    box-shadow: 5px 10px 10px 5px goldenrod;
+    box-shadow: 1px 1px 1px 1px goldenrod;
 }
 .input-label button{
     height: 3rem;
@@ -189,16 +192,19 @@ nav{
     border-radius: 10px;
     outline: none;
     border: 1px solid;
-    padding: 3px;
     margin-bottom: 2rem;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
     /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
-    box-shadow: 5px 5px 10px 10px darkred;
+    box-shadow: 1px 1px 1px 1px darkred;
 }
 .subb{
     display: flex;
     justify-content: center;
 
-}
+} 
+/* FOLLOW ME */
 .follow{
     display: grid;
     align-items: center;
@@ -213,7 +219,7 @@ nav{
 .social a{
     /* text-decoration: none; */
     color: black;
-    font-size: large;
+    font-size: 20px;
     font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -245,15 +251,13 @@ footer{
 .form-input input{
     height: 3rem;
     width: 20rem;
-    border-radius: 4px;
+    /* border-radius: 4px; */
     outline: none;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    border: 1px solid white;
-    border: 1px solid;
-    padding: 2px;
+    border: 1px solid rgb(158, 156, 156);
     /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
-    box-shadow: 5px 10px 10px 5px goldenrod;
+    box-shadow: 1px 1px 1px px goldenrod;
 }
 .form-input button{
     height: 3.35rem;
@@ -265,12 +269,11 @@ footer{
     color: white;
     outline: none;
     border: none;
-    border-radius: 2px solid white;
+    border-radius: 2px;
     cursor: pointer;
-    border: 1px solid;
     padding: 2px;
     /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
-    box-shadow: 5px 10px 10px 5px goldenrod;
+    /* box-shadow: 1px 1px 1px 1px goldenrod; */
 }
 .footer-container{
     margin-top: 2rem;
@@ -295,10 +298,6 @@ footer{
     width: 200px;
     height: 200px;
     border-radius: 20px;
-    border: 1px solid;
-    padding: 2px;
-    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
-    /* box-shadow: 5px 10px 10px 5px white; */
 } 
 .footer-container1{
     display: grid;
@@ -311,14 +310,916 @@ footer{
     list-style: none;
     text-decoration: none;
     color: white;
+    font-size: 20px;
+    font-weight: lighter;
     font-family: Arial, Helvetica, sans-serif;
 }
 .me{
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
     color: wheat;
-    margin-bottom: -2rem;
+    /* margin-bottom: -2rem; */
 } 
+/* MEDIA QUERY STARTS HERE */
+@media screen and (max-width: 420px) {
+    /*all nav links and logo are fixed here on all pages*/
+    header { 
+    display: grid;
+    justify-content: start;
+    background-color: dimgray;
+    line-height: 10px;
+    width: auto;
+}
+    .name-logo h2{
+        padding: 3px;
+        box-shadow: 1px 1px 0.3px 0.2px white;
+    }
+    .header{
+        display: flex;
+        gap: 0.5rem;
+        width: auto;
+    }
+    .header li a{
+        font-size: 15px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .art0 { 
+        margin-top: 7rem;
+    }
+    .art0 h2{
+    text-align: start;
+    line-height: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+    .article{
+        display: grid;
+        gap: 1rem;
+        line-height: 20px;
+    }
+    .article article{
+        width: 300px;
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* ABOUT PAGE */
+    #about{
+        padding: 8px;
+    }
+    #about h1{
+        text-align: start;
+    }
+    .about-me{
+        display: grid;
+        justify-content: start;
+        gap: 1rem;
+    }
+    .nav article{
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        width: 300px;
+        line-height: 20px;
+    }
+    /* only the ul */
+.inliner h2, .inliner li{
+    font-size: 20px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* CONTACT PAGE */
+/* contact page starts here */
+#contact{
+    display: grid;
+    justify-content: start;
+    text-align: center;
+    color: black;
+    line-height: 20px;
+}
+#contact h1{
+    text-align: start;
+}
+#contact p{
+    text-align: start;
+    font-size: 15px;
+    width: 350px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* name,  email, textarea and submit general class */
+.input-label{
+    display: grid;
+    justify-content: start;  
+}
+.name-email{
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 4rem;
+}
+.fname{
+    height: 50px;
+    width: 300px;
+}
+.input-label textarea{
+    width: 300px;
+    height: 120px;
+}
+/* FOLLOW ME */
+.follow{
+    display: grid;
+    /* align-items: center; */
+    justify-content: start;
+    line-height: 30px;
+}
+.follow h2{
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    
+} 
+.social{
+    list-style: none;
+}
+.social a{
+    color: black;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fb-link{
+    line-height: 30px;
+}
+/* footer styling starts here */
+footer{
+    background-color: black;
+}
+.subscribe{
+    margin-top: 4rem;
+    display: grid;
+    justify-content: start;
+    align-items: start;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subscribe h2{
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.form-input{
+    display: flex;
+    justify-content: start;
+    /* align-items: center; */
+}
+.form-input input{
+    height: 40px;
+    width: 200px;
+    outline: none;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* border: 1px solid rgb(158, 156, 156); */
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    /* box-shadow: 1px 1px 1px 1px goldenrod; */
+}
+.form-input button{
+    height: 44px;
+    width: 100px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(244, 18, 18);
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.footer-container{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    list-style: none;
+}
+.heading{
+    display: flex;
+    align-items: center;
+}
+.heading h1{
+    color: white;
+}
+.footer-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+} 
+.footer-container1{
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    list-style: none;
+    line-height: 15px;
+}
+.footer-container1 a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 15px; */
+    margin-bottom: -0.5rem;
+}
+address li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 15px; */
+    margin-bottom: -0.5rem;
+}
+.footer-container1 h1{
+    font-size: 22px;
+    color: brown;
+    margin-bottom: -0.3rem;
+}
+.me{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    /* margin-bottom: -2rem; */
+} 
+}    
+@media screen and (min-width: 421px) {
+      /*all nav links and logo are fixed here on all pages*/
+      header { 
+        display: flex;
+        justify-content: start;
+        background-color: dimgray;
+        line-height: 10px;
+        width: auto;
+    }
+        .name-logo h2{
+            padding: 3px;
+            box-shadow: 1px 1px 0.3px 0.2px white;
+        }
+        .header{
+            display: flex;
+            gap: 0.5rem;
+            width: auto;
+        }
+        .header li a{
+            font-size: 15px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* .art0 { 
+            margin-top: 7rem;
+        } */
+        .art0 h2{
+        text-align: start;
+        line-height: 1px;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+        .article{
+            display: flex;
+            gap: 1rem;
+            line-height: 20px;
+        }
+        .article article{
+            width: 200px;
+            font-size: 15px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /* ABOUT PAGE */
+        #about{
+            padding: 8px;
+        }
+        #about h1{
+            text-align: center;
+        }
+        .about-me{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            gap: 1rem;
+        }
+        .nav{
+            display: grid;
+            justify-content: start;
+        }
+        .nav article{
+            font-size: 15px;
+            font-weight: lighter;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 200px;
+            line-height: 20px;
+        }
+        /* only the ul */
+        .inliner h2{
+            font-size: 25px;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-bottom: 8px;
+        }
+     .inliner li{
+        width: 200px;
+        font-size: 20px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   /*the video on the about page*/
+.video-code { 
+    width: 250px;
+    border-radius: 20px;
+}
+    /* CONTACT PAGE */
+    /* contact page starts here */
+    #contact{
+        display: grid;
+        justify-content: center;
+        text-align: center;
+        color: black;
+        line-height: 20px;
+    }
+    #contact h1{
+        text-align: center;
+    }
+    #contact p{
+        text-align: center;
+        font-size: 15px;
+        /* width: 350px; */
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    /* name,  email, textarea and submit general class */
+    .input-label{
+        display: grid;
+        justify-content: center;  
+    }
+    .name-email{
+        display: grid;
+        gap: 1rem;
+        margin-bottom: 4rem;
+    }
+    .fname{
+        height: 50px;
+        width: 300px;
+    }
+    .input-label textarea{
+        width: 300px;
+        height: 120px;
+    }
+    /* FOLLOW ME */
+    .follow{
+        display: grid;
+        align-items: center;
+        /* justify-content: center; */
+        line-height: 30px;
+    }
+    .follow h2{
+        color: black;
+        font-size: 20px;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        
+    } 
+    .social{
+        list-style: none;
+    }
+    .social a{
+        color: black;
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .fb-link{
+        line-height: 30px;
+    }
+    /* footer styling starts here */
+    footer{
+        background-color: black;
+    }
+    .subscribe{
+        margin-top: 4rem;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .subscribe h2{
+        font-size: 15px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        color: white;
+    }
+    .form-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-input input{
+        height: 40px;
+        width: 200px;
+        outline: none;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .form-input button{
+        height: 44px;
+        width: 100px;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgb(244, 18, 18);
+        color: white;
+        outline: none;
+        border: none;
+        cursor: pointer;
+    }
+    .footer-container{
+        margin-top: 2rem;
+        margin-bottom: 4rem;
+        display: grid;
+        justify-content: center;
+        gap: 1rem;
+        list-style: none;
+    }
+    
+    @media screen and (min-width: 529px) {
+        .footer-container{
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: start;
+            gap: 1rem;
+            list-style: none;
+        }
+    }
+    @media screen and (min-width: 660px) {
+        .footer-container{
+            margin-top: 2rem;
+            margin-bottom: 4rem;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            list-style: none;
+        }
+        
+/* this is the first section of the page */
+.article{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 2rem;
+    line-height: 30px;
+}
+.article article{
+    width: 300px;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* the first section ended here */
 
+/* the second section about page starts here*/
+#about{
+    /* margin-top: 4rem; */
+    background-color: darkcyan;
+}
+#about h1{ 
+    text-align: center;
+}
+/* the video is included */
+.about-me{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.video-code{
+    width: 300px;
+}
+/* just the article and ul/li */
+.nav{
+    display: grid;
+}
+.nav article{
+    width: 300px;
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-container1 a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 15px; */
+    margin-bottom: -0.5rem;
+}
+address li{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    /* line-height: 15px; */
+    margin-bottom: -0.5rem;
+}
+.footer-container1 h1{
+    font-size: 22px;
+    color: brown;
+    margin-bottom: -0.3rem;
+}
 
+    }
+    /* 660px minimum ends here */
+    
+    .heading{
+        display: flex;
+        align-items: center;
+    }
+    .heading h1{
+        color: white;
+        font-size: 15px;
+    }
+    .footer-container img{
+        width: 50px;
+        height: 50px;
+        border-radius: 4px;
+    } 
+    .footer-container1{
+        display: grid;
+        justify-content: start;
+        gap: 1rem;
+        color: white;
+        list-style: none;
+        line-height: 15px;
+    }
+    .footer-container1 a{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        /* line-height: 15px; */
+        margin-bottom: -0.5rem;
+    }
+    address li{
+        list-style: none;
+        text-decoration: none;
+        color: white;
+        font-size: 12px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+        /* line-height: 15px; */
+        margin-bottom: -0.5rem;
+    }
+    .footer-container1 h1{
+        font-size: 17px;
+        color: brown;
+        margin-bottom: -0.3rem;
+    }
+    .me{
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: wheat;
+        /* margin-bottom: -2rem; */
+    } 
+  
+}
+@media screen and (min-width: 1000px) {
+    header { /*all nav links and logo are fixed here on all pages*/
+        display: flex;
+        justify-content: space-evenly;
+        background-color: dimgray;
+        top: 0;
+        right: 0;
+        left: 0;
+        position: fixed;
+        width: auto;
+    
+    }
+    
+    .name-logo h2{
+        color: white;
+        box-shadow: 1px 1px 1px 1px goldenrod;
+        font-size: 20px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    .header{
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+    }
+    .header a{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        font-weight: lighter;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .nav-header:hover{
+        background-color: darkred;
+    }
+    /*the pic on the center of homepage*/
+.flex { 
+    width: 300px;
+    border-radius: 25px;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 1px 1px 1px 1px goldenrod;
+}
+/*first section on homepage*/
+.art0 { 
+    margin-top: 3.7rem;
+    display: grid;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.art0 h2{
+    text-align: center;
+    line-height: 1px;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* this is the first section of the page */
+.article{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* gap: 4rem; */
+    line-height: 30px;
+}
+.article article{
+    width: 500px;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* the first section ended here */
+
+/* the second section about page starts here*/
+#about{
+    margin-top: 4rem;
+    background-color: darkcyan;
+}
+#about h1{ 
+    /* display: flex; */
+    text-align: center;
+}
+/* the video is included */
+.about-me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+/* just the article and ul/li */
+.nav{
+    display: grid;
+}
+.nav article{
+    width: 500px;
+    color: white;
+    font-size: large;
+    line-height: 30px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* only the ul */
+.inliner h2 {
+    font-size: 25px;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.inliner li{
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*the video on the about page*/
+.video-code { 
+    width: 300px;
+    border-radius: 20px;
+}
+/* contact page starts here */
+#contact{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* name,  email, textarea and submit general class */
+.input-label{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.name-email{
+    display: flex;
+    gap: 2rem;
+    height: 3rem;
+    margin-bottom: 0.6rem;
+    margin-top: 1rem;
+    
+}
+/* the email and name input */
+.fname{
+    border-radius: 20px;
+    width: 300px;
+    height: 40px;
+    outline: none;
+    border: 1px solid wheat;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 1px 1px 1px 1px goldenrod;
+}
+/* textarea and submit class name */
+.textarea-submit{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.input-label textarea{
+    height: 120px;
+    width: 300px;
+    border-radius: 15px;
+    outline: none;
+    border: 1px solid wheat;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 1px 1px 1px 1px goldenrod;
+}
+.input-label button{
+    height: 40px;
+    width: 100px;
+    /* margin-left: 8rem; */
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid;
+    margin-bottom: 2rem;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    box-shadow: 1px 1px 1px 1px darkred;
+}
+.subb{
+    display: flex;
+    justify-content: center;
+
+} 
+/* FOLLOW ME */
+.follow{
+    display: grid;
+    align-items: center;
+}
+.follow h2{
+    color: black;
+    margin-bottom: -1rem;
+    font-size: 22px;
+    
+} 
+.social{
+    list-style: none;
+}
+.social a{
+    /* text-decoration: none; */
+    color: black;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.fb-link{
+    line-height: 30px;
+}
+/* footer styling starts here */
+footer{
+    background-color: black;
+}
+.subscribe{
+    margin-top: 4rem;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.subscribe h2{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+.form-input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0rem;
+}
+.form-input input{
+    height: 45px;
+    width: 200px;
+    /* border-radius: 4px; */
+    outline: none;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid rgb(158, 156, 156);
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    /* box-shadow: 1px 1px 1px px goldenrod; */
+}
+.form-input button{
+    height: 49px;
+    width: 100px;
+    border-radius: 4px;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(244, 18, 18);
+    color: white;
+    outline: none;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 2px;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    /* box-shadow: 1px 1px 1px 1px goldenrod; */
+}
+.footer-container{
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    list-style: none;
+}
+.heading{
+    display: flex;
+    align-items: center;
+    border: 1px solid;
+    padding: 2px;
+    /* box-shadow: h-offset v-offset blur spread color; represented by 5px 10px 10px 10px and the color */
+    /* box-shadow: 5px 10px 10px 5px white; */
+}
+.heading h1{
+    color: white;
+    font-size: 20px;
+}
+.footer-container img{
+    width: 50px;
+    height: 50px;
+    border-radius: 4px;
+} 
+.footer-container1{
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    list-style: none;
+}
+.footer-container1 h1{
+    font-size: 25px;
+    margin-bottom: 1rem;
+}
+.footer-container1 a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    font-size: large;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.me{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    color: wheat;
+    /* margin-bottom: -2rem; */
+}
+}
 
